@@ -1,0 +1,41 @@
+/*
+Ms. Krasteva
+Braulio Carrion
+02/13/19
+This program creates a class for students. Different student objects can be created using the class 
+*/
+public class Student
+{
+    public String name;
+    public int markl;
+    public int mark2;
+    public double average;
+    
+    public Student (String n) //When a new student object is created the name of the student is passed through the perameters
+    {
+	name = n;
+	markl = 0;
+	mark2 = 0;
+	average = 0.0;
+    }
+
+
+    public void setMarks (int x, int y) //This method gets the information of the 2 marks the student recieved
+    {
+	markl = x;
+	mark2 = y;
+    }
+
+
+    public void calcAverage () //This method calcuates the students average between their 2 marks
+    {
+	average = (markl + mark2) / 2;
+    }
+
+
+
+    public String message ()//This method returns a message letting the user know the students average
+    {
+	return name + " You got an " + average;
+    }
+} // Student class

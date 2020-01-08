@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Braulios Portfolio: Sort </title>
+<link rel "stylesheet" type="text/css" href="stylesheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style type="text/css">
+@import url("../Calibri/stylesheet.css");
+.portfolio {
+    font-family: Calibri;
+}
+.sidenav {
+    height: 100%;
+    width: 175px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #46b8b0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #0073BA;
+    display: block;
+}
+.sidenav a:hover {
+    color: #FFFFFF;
+}
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {
+    padding-top: 15px;
+}
+.sidenav a {
+    font-size: 20px;
+}
+}
+</style>
+<div class="sidenav"><a href="AboutMeStart.html">About Me</a> <a href="OOP.html">OOP</a> <a href="Recursion.html">Recursion</a> <a href="Array.html">Array</a><a href="sort.html"><font color="black">Sorting</font></a><a href="sort.html"><font size="+1"   >&nbsp;&nbsp;&nbsp;&nbsp;Sorting</font></a> <a href="search.html"><font size="+1" color="black" >&nbsp;&nbsp;&nbsp;&nbsp;Searching</font></a> <a href="OOP2.html">OOP 2</a> <a href="Contact.html">Contact</a><a href="BIB.html">Bibliography</a><a href="proj.html">Project Plans</a></div>
+<div class="main">
+  <p> <FONT SIZE=+4>
+    <Center>
+      <B> Searching</B></font>
+  </Center>  
+  <p>  <FONT SIZE=+2>
+  <p>What if we don´t want to sort a list of an array, but we still want to know the locations of them? Well you´re in luck! With search algorithms we are able to search for a certain value in an array. In return we can get a boolean statement, letting us know that the value exists or an int statement, letting us know the exact location which the same value appears.   
+  <p><strong>Sequential (Linear) Search</strong>: This is the most common kind of search. It checks every value in the array starting from the begining. It takes each value in the array and compares it to the array that the user is trying to find. 
+  <center><img src="search.gif" width="800" height="300" alt=""/></center>
+  <p>
+	 <Center> <iframe src="search.java" width="50%" height="140">
+      </iframe></Center>
+    
+    
+</div>
+</body></html>

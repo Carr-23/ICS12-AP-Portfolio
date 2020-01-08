@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>Braulios Portfolio: Recursion</title>
+<link rel "stylesheet" type="text/css" href="stylesheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style type="text/css">
+@import url("../Calibri/stylesheet.css");
+.portfolio {
+    font-family: Calibri;
+}
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #46b8b0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #0073BA;
+    display: block;
+}
+.sidenav a:hover {
+    color: #FFFFFF;
+}
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {
+    padding-top: 15px;
+}
+.sidenav a {
+    font-size: 20px;
+}
+}
+</style>
+<div class="sidenav"><a href="AboutMeStart.html">About Me</a> <a href="OOP.html">OOP</a> <a href="Recursion.html"><font color="black">Recursion</font></a> <a href="Recursion.html"><font size="+1" >&nbsp;&nbsp;&nbsp;&nbsp;What is Recursion</font></a> <a href="RecursionEx.html"><font size="+1" color="black">&nbsp;&nbsp;&nbsp;&nbsp;Recursion Examples</font></a> <a href="Array.html">Array</a><a href="sort.html">Sorting</a> <a href="OOP2.html">OOP 2</a> <a href="Contact.html">Contact</a> <a href="BIB.html">Bibliography</a><a href="proj.html">Project Plans</a></div>
+<div class="main">
+<p> <FONT SIZE=+4> <Center> <B> Recrusion Examples</font> </Center> </B></p>
+
+<FONT SIZE=+2><strong>Maze Escape: </strong>Here the program checks where to go through the maze. It constantly checks each time it moves until it reaches the end.
+<iframe src="MazeGen.java" width="100%" height="300">
+  </iframe>
+	
+	<p><strong>Searching:</strong> Here the program uses recursion to look for a number in an array. If checks each value each time decreasing its size and changing the value to check.</p>
+	<iframe src="Searching.java" width="100%" height="300">
+  </iframe>
+	
+	<p><strong>Reverse Integers</strong>: Here the program prints the last value each time the method is called and removes it before calling the next.</p>
+	<iframe src="ReverseIntegers.java" width="100%" height="300">
+  </iframe>
+	<IMG STYLE="position:absolute; TOP:15%; LEFT:80%; WIDTH:350px; HEIGHT:250px" SRC="1.gif">
+
+</body></html>

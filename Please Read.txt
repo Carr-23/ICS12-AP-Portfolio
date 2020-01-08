@@ -1,0 +1,3 @@
+Index is the first page, and is the one opened first.
+
+ICSProj.html was me trying to test working download links. To be able to download files with one click instead of having to go to a seperate page and click download 

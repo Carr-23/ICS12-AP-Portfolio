@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>Braulios Portfolio: Sort </title>
+<link rel "stylesheet" type="text/css" href="stylesheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style type="text/css">
+@import url("../Calibri/stylesheet.css");
+.portfolio {
+    font-family: Calibri;
+}
+.sidenav {
+    height: 100%;
+    width: 175px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #46b8b0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #0073BA;
+    display: block;
+}
+.sidenav a:hover {
+    color: #FFFFFF;
+}
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {
+    padding-top: 15px;
+}
+.sidenav a {
+    font-size: 20px;
+}
+}
+</style>
+<div class="sidenav"><a href="AboutMeStart.html">About Me</a> <a href="OOP.html">OOP</a> <a href="Recursion.html">Recursion</a> <a href="Array.html">Array</a><a href="sort.html"><font color="black">Sorting</font></a><a href="sort.html"><font size="+1"   color="black">&nbsp;&nbsp;&nbsp;&nbsp;Sorting</font></a> <a href="search.html"><font size="+1">&nbsp;&nbsp;&nbsp;&nbsp;Searching</font></a> <a href="OOP2.html">OOP 2</a> <a href="Contact.html">Contact</a><a href="BIB.html">Bibliography</a><a href="proj.html">Project Plans</a></div>
+<div class="main">
+  <p> <FONT SIZE=+4>
+    <Center>
+      <B> Sorting</B></font>
+    </Center>
+  <p><FONT SIZE=+2>
+	  When it comes to sorting values there are many algorithms that are capable to doing the same exact task. The difference between them is the amount of memory one may use and the efficiency. The more common algorithms are made to sort values from greatest to least or vice versa. Sorting algorithms area really useful, especially when dealinn with a large amount of values.
+    
+	  
+  <p>  
+  <p><strong>Insertion Sort:</strong> The way insertion sort works is that it sorts the values as it goes on. It starts of with the first 2 values and sorts it. Then then first 3 so on so forth. It continues this process once it reaches the last value and finishes sorting it. 
+  <p>
+      <iframe src="insort.java" width="50%" height="275">
+      </iframe>
+	  <IMG STYLE="position:absolute; TOP:32.5%; LEFT:57.5%; WIDTH:400px; HEIGHT:275px" SRC="CornyThickGordonsetter-small.gif">
+		  
+		   <p>  
+  <p><strong>CockTail Shaker Sort:</strong> Cocktail shaker sort works opposite to insertion sort. Instead of having the array increase it decreases. Instead of sorting <strong>Everything</strong> as it goes, cocktail only sorts 2 values at a time. Once it finishes checking every pair of values and it reaches the end, the array size will decrease and then it will go backwards, moving the smallest values down. Essentially the sorting algorithm will go up and down the array as it gets smaller. This motion mimics that of a cocktail shaker.
+  <p>
+      <iframe src="cssort.java" width="50%" height="275">
+      </iframe>
+	  <IMG STYLE="position:absolute; TOP:77%; LEFT:57.5%; WIDTH:400px; HEIGHT:275px" SRC="cocksort.gif">
+</div>
+</body></html>

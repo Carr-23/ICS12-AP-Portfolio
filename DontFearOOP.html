@@ -1,0 +1,663 @@
+<html>
+<head>
+<title>Braulios Portfolio: OOP</title>
+<link rel "stylesheet" type="text/css" href="stylesheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style type="text/css">
+@import url("../Calibri/stylesheet.css");
+.portfolio {
+    font-family: Calibri;
+}
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #46b8b0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #0073BA;
+    display: block;
+}
+.sidenav a:hover {
+    color: #FFFFFF;
+}
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {
+    padding-top: 15px;
+}
+.sidenav a {
+    font-size: 20px;
+}
+}
+	p {
+            padding-left: 0%;
+            padding-right: 0%;
+        }
+
+        .textbox {
+            width: 100%;
+            border-style: solid;
+            border-width: 2px;
+            margin-left: 0%;
+        }
+
+        .green {
+            color: green;
+        }
+
+        .purple {
+            color: purple;
+        }
+
+        .brown {
+            color: brown;
+        }
+
+        img {
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 20%;
+        }
+</style>
+<div class="sidenav"><a href="AboutMeStart.html">About Me</a> <a href="OOP.html"><font color="black">OOP</font></a> <a href="OOP.html"><font size="+1">&nbsp;&nbsp;&nbsp;&nbsp;What is OOP</font></a> <a href="DontFearOOP.html"><font size="+1"   color="black">&nbsp;&nbsp;&nbsp;&nbsp;Don't Fear OOP</font></a> <a href="OOPCode.html"><font size="+1">&nbsp;&nbsp;&nbsp;&nbsp;OOP Code Tutorial</font></a> <a href="Recursion.html">Recursion</a> <a href="Array.html">Array</a><a href="sort.html">Sorting</a> <a href="OOP2.html">OOP 2</a> <a href="Contact.html">Contact</a><a href="BIB.html">Bibliography</a><a href="proj.html">Project Plans</a></div>
+<div class="main">
+	
+	<p> <FONT SIZE=+4> <Center> <B> Don't Fear OOP</font> </Center> </B></p>
+<p align="center">By: Ansh, Braulio, &amp; Nibiha
+  <body>
+</p>
+    <p><img src="https://m.media-amazon.com/images/M/MV5BNDg0OTc2ODMzOV5BMl5BanBnXkFtZTcwMzkyMDIyOA@@._V1_.jpg" alt="Mr. Povenmire"></img>
+      <br>
+    </p>
+    <p>Meet Dan. Dan is a writer for the Disney Channel. His hit show, “Phineas and Ferb,” has reached levels of
+        popularity no one has ever seen before. The kids who watch his show always love it, because Dan maintains a
+        constant level of creativity. How does he do this?</p>
+    <p>Well, before Dan writes anything, he visits his seven-story mansion, asks his housekeeper for a drink of orange
+        juice, sits down at his study, pulls out a sheet of paper, and begins to map out his story.</p>
+    <p>How does Dan create the entire plot of the episode at once? Easy. Everything he writes on the page is just a
+        sequence of events, or plot. Setting, character development, and how his characters interact is all taken care
+        of elsewhere. How does he do that? Let's find out.</p>
+    <p>You see, Dan, more than anything else, is orderly and consistent. It's what has made his books so popular. Let's
+        say that he has just sat down to write “Episode 233”, his two hundred and thirty-third episode.</p>
+    <p>The first thing that Dan needs is a setting. So he pulls down a binder he has marked "Phineas and Ferb Episode,”
+        opens to the first page, and reads the first few lines:</p>
+    <div class="textbox green">
+        <p style="padding-left:25%;padding-right:25%;">Every city in Phineas and Ferb has a few characteristics:
+            citizens, malls, and a couple inventors. A standard City would have one mall and be located in a tri-state
+            area during summer vacation.</p>
+    </div>
+    <p class="green">This description of a city, while not very profound, did two important things: 1) It established
+        the key ingredients for a city in Phineas and Ferb and 2) It gave several values that might occur in such a
+        city. (Any more than one mall and the economy collapses.)</p>
+    <div class="textbox brown">
+        <p style="padding-left:25%;padding-right:25%;">
+            City <br>&nbsp;&nbsp;&nbsp;&nbsp;
+            has a certain number of citizens <br>&nbsp;&nbsp;&nbsp;&nbsp;
+            has a certain number of malls <br>&nbsp;&nbsp;&nbsp;&nbsp;
+            has a certain number of inventors <br>&nbsp;&nbsp;&nbsp;&nbsp;
+            is located somewhere <br>&nbsp;&nbsp;&nbsp;&nbsp;
+            exists at a certain time <br>&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>
+            a typical City would have <br>&nbsp;&nbsp;&nbsp;&nbsp;
+            number of malls = 1 <br>&nbsp;&nbsp;&nbsp;&nbsp;
+            location = Tri-State Area <br>&nbsp;&nbsp;&nbsp;&nbsp;
+            time period = Summer Of 2008 <br>
+        </p>
+    </div>
+    <p class="brown">It may seem that Dan has a strange way of writing, but to him, it's straightforward. The first
+        line on the page states that Dan is defining a typical American city. You may have noticed that when Dan needs
+        to write two words, he won't use a space. There is a reason for this. If he puts spaces in, his editor in New
+        York, a stickler for details, gets confused. So to prevent him from being confused he removes spaces and adds a
+        capital before every word to show its a new word in the sentence. </p>
+    <p class="brown">The next step, logically, is to then declare what sorts of variables (those things which define
+        how the town looks) that a class of Danville might have. Citizens, malls, inventors, etc. That being said, all
+        that was left to do was to construct a sample City, with default values for his variables. Whew!</p>
+    <div class="textbox purple">
+        <p>
+
+            public class City<br>
+            {<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            int citizens;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            int malls;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            int inventors;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            String location;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            String time;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;
+            public City()<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            malls = 1;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            location = “Tri-State Area";<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            time = “Summer Of 2008”;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            }<br>
+            }<br>
+
+        </p>
+    </div>
+    <div class="purple">
+        <p>In creating his Phineas and Ferb City, Dan is defining a class, not the city itself (because that would be
+            an
+            object). A class is like a (really mixing metaphors here) recipe without any measurements. It says what
+            elements should be in a Phineas and Ferb City, but does not say in what amounts.
+        </p>
+        <p>This is the process of declaring what the variables will be called, and what sort of values they will
+            contain.
+            For now, just worry about "int"s and "String"s. "int" stands for integer, and "String" for a string of
+            letters.</p>
+        <p>The semi-colon is Dan's way of letting his editor know that he is done with the preceding statement and that
+            he
+            can move on to the next one. For the most part, you can think of it like a period.</p>
+        <p>Finally, you'll notice that whenever Dan wants to group a set of statements, he uses a curly brace, "{".
+            Even
+            though Dan knows his characters very well, this lets his editor see where a group of statements begins and
+            ends. Any class will always end with all the open curly braces being closed.</p>
+        <p>If Dan does create (instantiate) a city object eventually in his book, his editor will look to the same City
+            class to determine what that town object should look like (Dan will send the binders along with his
+            manuscript). But where will his editor find out the number of stables and such? This is where we get into
+            the
+            constructor.</p>
+        <p>The constructor comes after all of the variables have been declared. It starts with public City(). The
+            statements that follow are the default values for his variables; how Dan's city object would look if he
+            simply
+            instantiated it in his plot without specifying any of its values.</p>
+    </div>
+    <p>So now we've sneaked a peak at one of Dan's binders. He has reviewed the city section and thinks that this
+        episode should take place in a city. So he's ready to write the first part of his plot. Dan turns to the main
+        paper that is sitting in the middle of his desk and starts to write the story. </p>
+    <div class="textbox green">
+        <p class=>
+            Episode 233<br>
+            <br>
+            This episode takes place in a city called Danville. Danville has one mall, 241,000 citizens, and two
+            inventors.
+
+        </p>
+    </div>
+    <p class="green">Just a couple lines, but Dan has, in fact, said quite a bit. When he sends the story to his
+        editor, he will look
+        up "City" in the binders he sends along and fill in the date, location, and number of malls. In addition, Dan
+        has added information about the number of citizens and inventors. But that's okay, because his editor was
+        expecting it. Because his binder stated that every city would have a certain number of these, but didn't say
+        how many, his editor was quite happy to see them specified in his plot. Even though his main plot page only has
+        two lines, because of the reference to his binder, his story already contains quite a bit of information.</p>
+    <div class="textbox brown">
+        <p>
+            Main Episode233<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;
+            City danville is a new City.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            The number of malls is one.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            The number of citizens is 241000.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            The number of inventors is two.
+        </p>
+    </div>
+    <p class="brown">Dan takes two very important steps early on in his plot. First, he instantiates an object of type
+        City. Having created his first object, Dan then goes on to fill out the information that was initially lacking
+        in the City class: (number of malls, citizens, inventors )</p>
+    <div class="textbox purple">
+        <p>
+            public class Episode233{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            public static void main (String arguments[]) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            City danville = new City;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            danville.malls = 1;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            danville.citizens = 241000;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            danville.inventors = 2; <br>&nbsp;&nbsp;&nbsp;&nbsp;
+            }<br>
+            }
+
+        </p>
+    </div>
+    <p class="purple">Dan sure has a strange way of saying things, doesn't he? It would be possible to explain what each
+        word in those first two lines does, but it wouldn't make much sense to you at this point, and it would really
+        tax my small brain, so let's skip it for now, eh? What's important to know is that that line is how Dan let's
+        his editor know that this piece of paper is his main routine, or plot.</p>
+    <p class="purple">When he decides to specify those variables (saloons, etc) that were not specified in the WesternTown
+        class, Dan first states the name of the object (in this case, danville. Remember that danville is an object of
+        City) followed by a period and then by the name of the variable. Having done this, Dan can then provide a value
+        for the variable, such as two.</p>
+    <p>So, believe it or not, you've just seen object-oriented programming in action. Our author Dan first created a
+        class (that was the binder) that roughly described a city, then turned to his main plot page and created
+        (instantiated) a city object, which he then called danville.</p>
+    <p>Now, for his MadScientist, Dan needs a different binder. So he puts "Cities" back on the shelf, and goes to pick
+        up a new binder. his hand passes over many different titles, like "Animals", "Weapons", "Weather", "Music", all
+        the essentials for a good Western, until he finally comes to the binder he wants: "Citizens". he opens up to
+        the introduction: </p>
+    <div class="textbox green">
+        <p>"All citizens have a certain number of outfits, age, shoes, and number of pets. They are either male or
+            female, have a name, have a pet with a name, and have different IQ levels. If someone asks, humans can
+            respond with their name."</p>
+    </div>
+    <p class="green">You'll notice that Dan likes to make all characteristics variables. This gives his the freedom to
+        change their values later in the story. You'll note that he left the sex, name, pet name, and IQ level
+        unspecified. </p>
+    <p class="green">Just so all of his citizens don't look identical, Dan prefers to specify those variables when he
+        writes the plot.</p>
+    <div class="textbox brown">
+        <p>Citizens<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            have a certain number of outfits<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            have a certain age<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            have a certain number of shoes<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            have a certain number of pets<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            have a name for their pet<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            have a name<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            have a certain sex<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            Have a certain IQ level<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>
+            A standard human would start with<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;
+            one outfit<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            two shoes<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            one pet<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>
+            When someone asks for your name<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            tell them your name <br>&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>
+            When someone asks for your pets name<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            tell them your pet's name <br>
+        </p>
+    </div>
+    <p class="brown">You, being as sharp as you are, notice that Dan's human has some interactivity. He can ask its
+        name, and it will respond, he can asks his pets name and he will also respond. This is called a method and is
+        your key to a good time. We'll get to it in just a few pages.</p>
+    <div class="textbox purple">
+        <p>
+            public class Citizens {<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            int outfits;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            int age;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            int shoes;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            int pets;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            int IQ;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            String name;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            String sex;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            String petName;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;
+            public Citizens() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            outfits = 1;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            pets = 1;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            shoes = 2;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            } <br>&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;
+            public String whatIsYourName() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            return name;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            }<br>
+            }
+        </p>
+    </div>
+    <p class="purple">Boy, it all makes sense except that bit about that "public String whatIsYourName()" business, eh?
+        Don't worry. We'll get to all that in just a little bit.</p>
+    <p>As interesting as these descriptions of humans may be, however, they're not very specific. Dan promised his
+        editor a new story by Friday, so he decides to get down to business. Flipping through the "Humans" binder, he
+        comes to the first chapter, entitled "MadScientists".</p>
+    <div class="textbox green">
+        <p>Mad scientists are based on the idea of citizens. They are identical, except that they have some additional
+            qualities, namely a headquarters, an evil laugh, some level of meanness, a certain quantity of weapons in
+            their possession, and a number of children. Your standard MadScientist will have an evil laugh and start the
+            day out nice. </p>
+    </div>
+    <p class="green">Nothing really new here, except that we have peered deeper into Dan's binders (classes) to see one
+        of the subsections (subclasses). This particular subsection, mad scientists, extended the idea of humans.</p>
+    <div class="textbox brown">
+        <p>
+            MadScientists extends the idea of Humans. <br>&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;
+            A MadScientists<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            has a headquarter.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            has an evil laugh.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            has some level of meanness.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            has certain amount of weapons.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            has a certain number of children.<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;
+            For a given MadScientists,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            He will start out nice.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            He will have an evil laugh.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        </p>
+    </div>
+    <br>
+    <div class="textbox purple">
+        <p>
+            public class MadScientist extends Humans {<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            String headquarters;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            String evilLaugh;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            int meanness;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            int weapons;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            int daughters;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            Citizens daughter;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;
+            public MadScientist() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            meanness = 0;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            }<br>
+            }
+
+        </p>
+    </div>
+    <p class="purple">We have introduced here the idea of subclasses. "Humans"; was a class, and "MadScientist" a subclass
+        of it.</p>
+    <p class="purple">You may also be wondering why Dan declared "Citizens child" in this class. Think of it this way. If
+        the MadScientist is going to have a daughter, Dan's editor has to know what a daughter is. By declaring
+        "Citizens daughter", his editor will know that a daughter is a type of citizen.</p>
+    <p>After Dan had described what his mad scientist looked like, he decides to move on to some of the methods
+        (remember those from a few pages ago?) that mad scientists employ to achieve their dastardly deeds. Dan wants
+        to focus on how mad scientists make new weapons. So he writes:</p>
+    <div class="textbox green">
+        <p>Whenever the main plot says that a mad scientist makes a new weapon, his level of meanness will go up by
+            one. </p>
+    </div>
+    <p class="green">While this may not look any different than any of the things that we were doing before, you should
+        note that Dan
+        is specifying how one of his characters acts, rather than just how he/she/it looks. You should also note that
+        he is altering one of his variables here, the variable "meanness". Since his binders (classes) can contain
+        information about how his characters act, Dan can create quite a bit of character development without ever even
+        touching his main plot page.</p>
+    <div class="textbox brown">
+        <p>
+            buildWeapon<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            meanness increases by one
+
+        </p>
+    </div>
+    <p class="brown">Notice the pattern than has begun to emerge in Dan's writing. What he has done with this method is
+        similar to how he treated variables in the past. First, he notes what he is going to describe (in this case a
+        method called meanness) and then, on the next line, what that method will do when he calls it in his main plot
+        (routine).</p>
+    <div class="textbox purple">
+        <p>
+            public void buildWeapon() {<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            meanness ++;<br>
+            }
+
+        </p>
+    </div>
+    <p class="purple">Although Dan used quite a bit of strange symbols, his approach was straightforward and consistent.
+        The first thing that he did was to name the method "buildWeapon". Since the method name is buildWeapon, Dan
+        figures that he should modify the MadScientist's number of weapons, in this case by adding one to it. That is
+        what the "++" after "weapons" does.</p>
+    <p>Now, the mad scientists in Dan's stories are famous for being mean. Hence, it's very difficult for an onlooker
+        to gauge how mean they are. Dan decides that it's a good idea to allow his mad scientist to state how mean he
+        is, so, he writes a new method:</p>
+    <div class="textbox green">
+        <p>If someone asks a mad scientist how mean he is, the mad scientist will always respond with his level of
+            meanness.</p>
+    </div>
+    <br>
+    <div class="textbox brown">
+        <p>
+            howMeanAmI<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            tell them how mean I am
+
+        </p>
+    </div>
+    <br>
+    <div class="textbox purple">
+        <p>
+            public int howMeanAmI() {<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            return meanness;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            }
+
+
+        </p>
+    </div>
+    <p class="purple">If you're wondering about that "int" in front of the "howMeanAmI()", Dan had to put that in because
+        this method has a return value. In order to let the editor know what sort of value was being returned, he
+        specified "int" (for integer) in front of the name of the method. Remember, his editor doesn't like surprises,
+        and if he didn't tell his what sort of variable this method was going to return, he'd get all hot and
+        flustered. (Now, we don't want that, do we?)</p>
+    <p>At this point Dan is pretty proud of himself, having created a mad scientist that can experience pretty much the
+        full range of MadScientistous activities. However, just to make for a good closing, Dan decides to have the mad
+        scientist adopt a daughter. he sets out to write one more method. What makes this different than his other
+        methods is that it needs information about someone other than the mad scientist, namely the daughter to be
+        adopted. </p>
+    <div class="textbox green">
+        <p>If the MadScientistsis supposed to adopt a daughter, adopt the specified daughter, then add one to the
+            number of daughters he has adopted. Then print out "Wow! (the specified daughter) has been adopted!" </p>
+    </div>
+    <p class="green">So now you can see the flexibility that Dan has in writing his stories; he can leave certain
+        things to be
+        specified only when the plot is written. And by writing that the daughter will have a name, but not stating
+        what it will be, that's just what he has done. He has also used a print statement that will print out the
+        information gathered by the method as an event in his book. How easy! </p>
+    <div class="textbox brown">
+        <p>
+            adoptDaughter (Citizens daughter)<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            add one to the number of daughters this MadScientists has adopted.<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            print "How nice! (the specified daughter) has been adopted!
+
+        </p>
+    </div>
+    <p class="brown">I have nothing to say to you people. If you feel bad about understanding everything so far, then
+        you can read the purple section for this one.</p>
+    <div class="textbox purple">
+        <p>
+            public void adoptDaughter (Citizens daughter) {<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            this.daughter = daughter;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            daughters++;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            System.out.println("The Mad Scientist has adopted " + daughter.whatIsYourName());<br>
+            }
+
+        </p>
+    </div>
+    <p class="purple">"Geez! I should have stayed with the green type," you're probably saying to yourself. Don't worry.
+        It looks much worse than it is, and you probably understand most of it already. First, we have the name of the
+        method: "adoptDaughter". No surprise there. Then, between those parentheses, we have "Citizens daughter". What
+        comes between those parentheses is called an argument. It helps make the method more specific. When Dan starts
+        writing his plot, he will at some point want his Mad Scientist to adopt a daughter (what sort of heartwarming
+        scientist would we have without it?). But if he just writes in his plot, "MadScientist.adoptDaughter()", that
+        wouldn't be very exciting for the reader. Who has been tied up? What is his name? Priding herself on always
+        having strong female characters, Dan wants to add the name of the damsel who is being tied up. Hence, when his
+        plot says "adoptDaughter", it will also say the name of the damsel being tied up as an argument. "Citizens",
+        which comes before "daughter", tells his editor that the thing being tied up is a citizen. His editor doesn't
+        like surprises, so that knowing that it is a citizen being tied up, rather than say, a sheep, reduces the
+        amount of guesswork on his end.</p>
+    <p class="purple">The next line is another attempt by Dan to please his rather persnickety editor, who is even more
+        picky than he is! Even though he has supplied the name of the damsel as an argument, his editor won't let his
+        use it in the method until he has stated that the "daughter" that he declared as a "MadScientists" variable is
+        equal to the value given in the method's argument. Having finally jumped through all of his editor's hoops
+        (don't expect to understand all of that right away, it took Dan a couple of weeks!), Dan gets down to finishing
+        the rest of his method. Once the MadScientist has tied up a damsel, the variable "daughters" will surely go up
+        by one, so Dan puts the same "++" after daughters that he had put after "meanness" in the "lookInMirror"
+        example.</p>
+    <p class="purple">The stage being set, Dan decides that it is time to let his readers know what is going on. Hence,
+        the "System.out.println" statement. A bit wordy, but it lets his editor know that what comes between those
+        parentheses goes into the final text of the book: all the text he puts in between quotation marks. Why is the
+        variable daughter.whatIsYourName' then not in quotation marks? Because it is not a literal, but rather an
+        object's method. By keeping it out of the quotation marks, Dan lets his editor know that he has to go look for
+        the daughter object (he would find out that it was of the "Citizens" class) then for the method
+        "whatIsYourName" (he would see that it returned the daughter’s name). All of that for a daughter’s name!</p>
+    <p class="purple">Had he put daughter.whatIsYourName inside of the quotation marks, his editor would have printed out
+        in the final copy of the book : "The Mad Scientist has adopted “ + daughter.whatIsYourName!". No Pulitzers for
+        that. In order for his editor to substitute the variable name for the word name, Dan closes the quotation marks
+        before he writes it. The plus "+" lets his editor know that he wants to join the two statements.
+    </p>
+    <p class="purple">Lucky for you, the next page is just review.</p>
+    <p>At this point, it might be a good idea to review what Dan's overall description of a MadScientist looks like.
+        None of this material is new, just a compilation of what we've gone over in the past few pages.</p>
+    <div class="textbox green">
+        <p>Mad scientists are based on the idea of citizens. They are identical, except that they have some additional
+            qualities, namely a headquarters, an evil laugh, some level of meanness, and a certain quantity of weapons
+            in their possession. Your standard MadScientist will have an evil laugh, start the day out nice, and not
+            yet have adopted any daughters.
+            Whenever the main plot says that a mad scientists makes a new weapon, his level of meanness will go up by
+            one. If someone asks a mad scientist how mean he is, the mad scientist will always respond with his level
+            of meanness. If the mad scientist is supposed to adopt a daughter, adopt the specified daughter, then add
+            one to the number of daughters he has adopted. Then print out "Wow! (the specified daughter) has been
+            adopted!"
+        </p>
+    </div>
+    <br>
+    <div class="textbox brown">
+        <p>
+            MadScientists extends the idea of Humans.<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            Every MadScientists has a headquarter.<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            Every MadScientists has an evil laugh.<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            Every MadScientists has some level of meanness.<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>
+            For a given MadScientists ,<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            He will have an evil laugh.<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            He will start the day out nice<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            He will not yet have no adopted daughters.<br>
+            <br>
+            buildWeapon<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            meannessincreases by one <br>
+            <br>
+            howMeanAmI<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            tell them how mean I am<br>
+            <br>
+            adoptDaughter (name)<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            add one to the number of daughters this MadScientists has adopted.<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            print "How nice! (the daughters name) has been adopted!
+
+        </p>
+    </div>
+    <br>
+    <div class="textbox purple">
+        <p>
+            public class MadScientists extends Humans {<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            String headquarters;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            String evilLaugh;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            int meanness;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            int daughters;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            Citizens daughter;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;
+            public MadScientist() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            meanness = 0;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            }<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;
+            public void buildWeapon() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            meanness ++;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            }<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;
+            public int howMeanAmI() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            return meanness;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            }<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;
+            public void adoptDaughter (Citizens daughter) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            this.daughter = daughter;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            daughters++;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            System.out.println("How nice! The Mad Scientist has adopted " + daughter.whatIsYourName());<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            }<br>
+            }
+
+        </p>
+    </div>
+    <p>All this work with daughters and weapons is making Dan feel a bit run down, so he decides to stop working on his
+        characters for a little while, and to work a bit on the main plot. Accordingly, he sets his pen to the sheet of
+        paper labeled main routine.</p>
+    <div class="textbox green">
+        <p>
+            Here is the main plot of the Episode 233: There is a city called Danville. Danville has one mall, 241,000
+            citizens, and two inventors. There is a male mad scientist named Heinz. Heinz has a 20-storey headquarters,
+            an evil laugh, and a pet named "Balloony". Heinz has an IQ of 160. Vanessa is a female citizen. She has a
+            pet named "Maurice" and has an IQ of 130. In our story, Heinz starts out by building weapons. He then lets
+            everyone know how mean he is, and then adopts a citizen named Vanessa.
+        </p>
+    </div>
+    <br>
+    <div class="textbox brown">
+        <p>
+            Here is the main plot of Episode233 at Danville;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            In the novel Episode233;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>
+            There is a city called Danville;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            Danville has one mall;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            Danville has 241000 citizens;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            Danville has two inventors;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>
+            There is a new MadScientist named Heinz;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            Heinz has a 20 storey headquarter;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            Heinz has an evil laugh;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            Heinz has a pet named Balloony;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            Heinz is male;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            Heinz has an IQ of 160;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>
+            There is a new Human named Vanessa;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            Vanessa is female;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            Vanessa has a pet named "Maurice";<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            Vanessa has an IQ of 130;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>
+            Heinz makes some weapons;<br>
+            Heinz lets everyone know how mean he is;<br>
+            Heinz adopts a citizen named Vanessa;<br>
+
+        </p>
+    </div> <br>
+    <div class="textbox purple">
+        <p>
+            public class Episode233 {<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            public static void main(String arguments[]) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            City danville = new City();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            danville.malls = 1;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            danville.citizens = 241000;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            danville.inventors = 2;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            MadScientists heinz = new MadScientists();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            heinz.headquarters = "20-storey building";<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            heinz.name = “Heinz”<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            heinz.sex = "Male";<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            heinz.petName = "Balloony";<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            heinz.iq = 160;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Citizens vanessa = new Citizens();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            vanessa.sex = "Female"; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            vanessa.petName = "Maurice";<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            vanessa.iq = 130;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            vanessa.name = "Vanessa";<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            heinz.buildWeapon();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            System.out.println(heinz.howMeanAmI()); <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            heinz.adoptDaughter(vanessa); <br>&nbsp;&nbsp;&nbsp;&nbsp;
+            }<br>
+            }
+
+        </p>
+    </div>
+    <p>"That's his book?" you ask yourself. "Thirteen pages of slogging through ugly yellow text for this?"</p>
+    <p>So what is so special about this plot? Well, it's not everything that's happening in the main routine, but
+        rather everything that happens behind the scenes. When Dan created that town called Danville, he created
+        <b>(instantiated)</b> an <b>object</b> of type city. This object had all the characteristics of a city (do you
+        remember the
+        binders?) The same thing goes for the Heinz object and the Vanessa object. While some of the traits of these
+        objects were specified at the time of creation, most of their traits were specified back in the binders, or
+        classes. This allowed Dan to say a good deal while only saying a little bit in his <b>main routine.</b></p>
+    <p>So Dan's main plot (routine) turns out to be nothing more than a collection of references to objects, which in
+        turn are references to classes. It is, to mix metaphors again, literary federalism, with everything being dealt
+        with at the lowest level possible.</p>
+    <p>So what are the benefits of this? Well, imagine that instead of one episode, Dan's editor wanted five hundred.
+        Or let's say that Dan decided that Heinz the mad scientist shouldn't be so cruel. Instead of going back and
+        laboriously changing all his instances of Heinz making weapons (or whatever it is that bad folks do), Dan could
+        just make some changes to the Heinz object at the time of instantiation. Or he could change the Mad Scientist
+        class to be friendlier. Or he could even create a *new* class, called Friendly MadScientist. He's got a lot of
+        options; the point is that he only needs to make the changes in one place.</p>
+    <p>But that's not Dan's only reason for writing his episodes in Java. He has a keen idea for the future of Phineas
+        and Ferb. he sees interactivity. And if, instead of being bound in pages, his characters live in objects and
+        classes, Dan is free to create a Virtual Danville. Readers (on his website) could be prompted for their own
+        actions and his characters could respond in a variety of ways, according to what was written in their classes.
+        Using Java, Dan could finally bring Danville to life. </p>
+    <p><b>So who is this editor fellow?</b></p>
+    <p>You've seen many references to Dan's editor in New York. Who is this fellow? Well, he knows the world of
+        Danville in and out, and he knows that certain things will just not work in a good episode. That is why his
+        editor takes all of Dan's scripts, reads them, and then returns them with all the errors that he has made
+        (remember, we said that he was a bit persnickety). On the computer, this is called a <b>compiler.</b> All Java
+        programs must be <b>compiled</b> before they can be run. The compiler will patiently (and repeatedly) tell you
+        everything that you did wrong. And then you get to go back and do it again.
+    </p>
+	
+	
+	</div>
+</body></html>

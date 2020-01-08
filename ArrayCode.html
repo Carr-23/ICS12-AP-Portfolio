@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>Braulios Portfolio: Array</title>
+<link rel "stylesheet" type="text/css" href="stylesheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style type="text/css">
+@import url("../Calibri/stylesheet.css");
+.portfolio {
+    font-family: Calibri;
+}
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #46b8b0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #0073BA;
+    display: block;
+}
+.sidenav a:hover {
+    color: #FFFFFF;
+}
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {
+    padding-top: 15px;
+}
+.sidenav a {
+    font-size: 20px;
+}
+}
+</style>
+<div class="sidenav"><a href="AboutMeStart.html">About Me</a> <a href="OOP.html">OOP</a> <a href="Recursion.html">Recursion</a> <a href="Array.html"><font color="black">Array</font></a><a href="Array.html"><font size="+1">&nbsp;&nbsp;&nbsp;&nbsp;What are Arrays</font></a> <a href="ArrayCode.html"><font size="+1"  color="black">&nbsp;&nbsp;&nbsp;&nbsp;Array Code Tutorial</font></a><a href="sort.html">Sorting</a> <a href="OOP2.html">OOP 2</a> <a href="Contact.html">Contact</a><a href="BIB.html">Bibliography</a><a href="proj.html">Project Plans</a></div>
+<div class="main">
+	<p> <FONT SIZE=+4> <Center> <B> 
+	  <p>How To Code It!</font> </p></B>
+	  <p>&nbsp;</p>
+	</Center>
+		
+<p><FONT SIZE=+2>
+	
+	//Creating a 1D array<font color="#999595">
+<p>private <em>DataType</em> [] arrayName = new <em>DataType</em> [<em>arraySize</em>]</font>
+<p>
+<p>//Creating a 2D array<font color="#999595">
+<p>private<em> DataType</em> [][] arrayName = new <em>DataType</em> [<em>#OfRows</em>][#OfColumns]</font>
+<p>
+<p>//Creating an Array List<font color="#999595">
+<p>ArrayList&lt;<em>ElementType</em>&gt; arrayListName = new ArrayList&lt;<em>Element</em>Type&gt;();
+<p><strong>OR</strong>
+<p>List&lt;<em>Element</em>Type&gt; listName = new ArrayList&lt;<em>Element</em>Type&gt;();</font>
+<p>
+<p>//Find array length<font color="#999595">
+<p>arrayName.length;
+<p><strong>(Number of Columns) </strong>arrayName.length;
+<p><strong>(Number of Rows)</strong> arrayName[0].length;</font>
+<p>
+<p>//Get value of a location in the array<font color="#999595">
+<p>arrayName[<em>LocationOfNumber</em>];
+<p>arrayName[<em>LocationOfNumber</em>Y][<em>LocationOfNumber</em>X];</font>
+<p>
+<p>//Set value of a location in the array<font color="#999595">
+<p>arrayName[<em>LocationOfNumber</em>] =<em> NewValue</em>;
+<p>arrayName[<em>LocationOfNumber</em>Y][<em>LocationOfNumber</em>X] =<em> NewValue</em>;</font>
+<p>
+<p>//Find size of an arraylist<font color="#999595">
+<p>arrayListName.size();</font>
+<p>
+<p>//Check if an arraylist is empty<font color="#999595">
+<p>arrayListName.isEmpty();</font>
+<p>
+<p>//Add an element to the arraylist<font color="#999595">
+<p>arrayListName.add(<em>Element</em>);
+<p><strong>OR</strong>
+<p>arrayListName.add(<em>LocationYouWantToAddItToo, Element</em>);</font>
+<p>
+<p>//Set a new value in an arraylist<font color="#999595">
+<p>arrayListName.set(<em>LocationYouWantToAddItToo, Element</em>);</font>
+<p>
+<p>//Get a value from an arraylist<font color="#999595">
+<p>arrayListName.get(<em>Location</em>);</font>
+<p>
+<p>//Check if the arraylist contains a certain value<font color="#999595">
+<p>arrayListName.contains(<em>Element</em>);</font>
+<p>
+<p>//Find the index of a certain value in an arraylist<font color="#999595">
+<p>arrayListName.indexOf(<em>Element</em>);</font>
+<p>
+<p>When it comes to arrays, we typically use for loops because we are able to use the counter of the loop as a variable when dealing with arrays. However, with arraylists, we use something called a <strong>For-Each Loop </strong><font color="blue">
+<p>Ex. 
+<p>for (<em>Element</em>Type tempElementName: arrayListName){
+<p>}</font>
+<p>
+<p>A for each loop repeats itself until each element in the array is called. tempElementName refers to the element in the current location in the arraylist (starts with the first element at location 0. When it repeats it then goes to the next element until all were used). The loop gets the value from arrayListName. This loop allows us to acess each element without having to actually call it by location.
+<p class="portfolio"><center><table border=1>
+  <tr>
+    <td><a href="RecursionEx.html"><img src="arrow3.png" width="500" height="150" alt=""></a></td>
+  </tr>
+</table></center>
+	<IMG STYLE="position:absolute; TOP:50%; LEFT:70%; WIDTH:500px; HEIGHT:500px" SRC="download.png">
+		<IMG STYLE="position:absolute; TOP:130%; LEFT:70%; WIDTH:400px; HEIGHT:350px" SRC="logo.gif">
+	</div>
+</body></html>

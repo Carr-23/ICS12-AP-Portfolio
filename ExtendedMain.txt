@@ -1,0 +1,34 @@
+/*
+Ms. Krasteva
+Braulio Carrion & Jame Houle
+2019-02-19
+This is a new main to test out the extended wizard class
+*/
+public class ExtendedMain{
+  public static void main (String [] args){
+    FireWizard James = new FireWizard (100, "James", "Male","Purple","Fantastic Moustache");
+    James.getMaxFirePower ();
+    James.castFireBall ();
+    James.castInferno ();
+    James.getFirePower ();
+    James.castInferno ();
+    James.getFirePower (); 
+    James.coolDown ();
+    James.getFirePower ();
+    James.advancedSpell ();
+    James.getMana ();
+    System.out.println (James.getName () + " is a " + James.getGender () + ", wears a " + James.getRobeColour () + " robe and has a " + James.getFacialHair ());
+
+    WaterWizard Janice = new WaterWizard ();
+    Janice.setName ("Janice Dyke");
+    Janice.setGender ("Female");
+    Janice.getMaxWaterPower ();
+    Janice.castWaterBolt ();
+    Janice.castCreateRiver ();
+    Janice.getWaterPower ();
+    Janice.dryOff ();
+    Janice.getWaterPower ();
+    System.out.println (Janice.getName () + " is a " + Janice.getGender () + ", wears a " + Janice.getRobeColour () + " robe and has " + Janice.getFacialHair ());
+  }
+}
+    

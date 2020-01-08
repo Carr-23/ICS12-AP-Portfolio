@@ -1,0 +1,55 @@
+/*
+Ms. Krasteva
+Braulio Carrion & Jame Houle
+2019-02-19
+This is class extends the wizards class with new attributes and functions
+*/
+public class FireWizard extends Wizards{
+  private int firePower; //Fire Power is like mana, but for fire wielding spells
+  private int maxFirePower;
+  
+  public FireWizard (){
+    maxFirePower = 100;
+    firePower = maxFirePower;
+  }
+  
+  public FireWizard (int maxFP, String name, String gender, String robeColour, String facialHair){
+    maxFirePower = maxFP;
+    firePower = maxFirePower;
+    setName (name);
+    setGender (gender);
+    setRobeColour (robeColour);
+    setFacialHair (facialHair);
+  }
+  
+  public void castFireBall (){
+    if (firePower - 20 >= 0){
+      System.out.println ("Playing with fire is fun!");
+      firePower -= 20;
+    }
+    else
+      System.out.println ("This is too dangerous right now");
+  }
+  
+  public void castInferno (){
+    if (firePower - 50 >= 0){
+      System.out.println ("BURN BABY BURN!");
+      firePower -= 50;
+    }
+    else
+      System.out.println ("This is too dangerous right now");
+  }
+  
+  public void coolDown (){ //Resets the wizard's fire power
+    firePower = maxFirePower;
+  }
+  
+  public int getFirePower (){
+    return firePower;
+  }
+  
+  public int getMaxFirePower (){
+    return maxFirePower;
+  }
+}
+      

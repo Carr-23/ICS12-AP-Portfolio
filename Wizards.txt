@@ -1,0 +1,97 @@
+/*
+Ms. Krasteva
+Braulio Carrion & Jame Houle
+2019-02-19
+This is a Wizards class that creates a template for all wizards
+*/
+public class Wizards {
+  private String name;
+  private String gender;
+  private String robeColour; 
+  private String facialHair;
+  private int maxMana; //the total amount of mana the wizard can have
+  private int mana; //mana is the amount of magical endurance left in a wizard
+  
+  public Wizards (){
+    name = "The One Whom Shall Not Be Named";
+    maxMana = 100;
+    mana = maxMana;
+    gender = "unknown";
+    robeColour = "black";
+    facialHair = "no facial hair";
+  }
+  
+  public Wizards (String n, String g, String robeC, int maxM, String fHair){
+    name = n;
+    maxMana = maxM;
+    mana = maxMana;
+    gender = g;
+    robeColour = robeC;
+    facialHair = fHair;
+  }
+  
+  public void basicSpell (){
+    if (mana - 10 >= 0){
+      System.out.println ("That wasn't very exciting");
+      mana -= 10;
+    }
+    else
+      System.out.println ("I am too tired to cast this spell");
+  }
+  
+  public void advancedSpell (){
+    if (mana - 25 >= 0){
+      System.out.println ("Behold! A truly amazing spell");
+      mana -= 25;
+    }
+    else
+      System.out.println ("I am too tired to cast this spell");
+  }
+  
+  public void setRobeColour (String colour){
+    robeColour = colour;
+  }
+  
+  public void setFacialHair (String fHair){
+    facialHair = fHair;
+  }
+  
+  public void setGender (String g){
+    gender = g;
+  }
+  
+  public void setName (String n){
+    name = n;
+  }
+  
+  public void refresh (){ //refresh () -> allows the wizard to regain his/her mana
+    mana = maxMana;
+    System.out.println ("I AM REFRESHED!");
+  }
+  
+  public int getMana (){
+    return mana;
+  }
+  
+  public String getRobeColour (){
+    return robeColour;
+  }
+  
+  public int getMaxMana (){
+    return maxMana;
+  }
+  
+  public String getGender (){
+    return gender;
+  }
+  
+  public String getFacialHair (){
+    return facialHair;
+  }
+  
+  public String getName (){
+    return name;
+  }
+}
+    
+    

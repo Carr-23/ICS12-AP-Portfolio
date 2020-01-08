@@ -1,0 +1,26 @@
+/*
+Ms. Krasteva
+Braulio Carrion & Jame Houle
+2019-02-19
+This is a main class that tests the Wizards class using both a default Wizard object and one with value given
+*/
+public class Main{
+  public static void main (String [] args){
+    Wizards Braulio = new Wizards ();
+    Braulio.advancedSpell (); 
+    Braulio.advancedSpell ();
+    Braulio.advancedSpell ();
+    Braulio.advancedSpell (); //calls advancedSpell () four times to drain the mana in order to demonstrate not being able to cast with not enough mana.
+    System.out.println (Braulio.getMana ());
+    Braulio.basicSpell ();
+    Braulio.refresh ();
+    System.out.println (Braulio.getMana ());
+    Braulio.basicSpell ();
+    System.out.println (Braulio.getMana());
+    Braulio.setFacialHair ("Lucious Beard");
+    System.out.println (Braulio.getName () + " is a " + Braulio.getGender () + " and has a " + Braulio.getFacialHair () + " and is wearing a " + Braulio.getRobeColour () + " robe.");
+
+    Wizards Juan = new Wizards ("Juan", "Male", "White", 75, "no facial hair");
+    System.out.println (Juan.getName () + " is a " + Juan.getGender () + " and has a " + Juan.getFacialHair () + " and is wearing a " + Juan.getRobeColour () + " robe.");
+  }
+}

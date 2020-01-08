@@ -1,0 +1,54 @@
+/*
+Ms. Krasteva
+Braulio Carrion & Jame Houle
+2019-02-19
+This is class extends the wizards class with new attributes and functions
+*/
+public class WaterWizard extends Wizards{
+  private int waterPower;
+  private int maxWaterPower;
+  
+  public WaterWizard (){
+    maxWaterPower = 100;
+    waterPower = maxWaterPower;
+  }
+  
+  public WaterWizard (int maxWP, String name, String gender, String robeColour, String facialHair){
+    maxWaterPower = maxWP;
+    waterPower = maxWaterPower;
+    setName (name);
+    setGender (gender);
+    setRobeColour (robeColour);
+    setFacialHair (facialHair);
+  }
+  
+   public void castWaterBolt (){
+    if (waterPower - 20 >= 0){
+      System.out.println ("Water is kinda wet...");
+      waterPower -= 20;
+    }
+    else
+      System.out.println ("I'm too moist right now");
+  }
+  
+  public void castCreateRiver (){
+    if (waterPower - 70 >= 0){
+      System.out.println ("DROWN!");
+      waterPower -= 70;
+    }
+    else
+      System.out.println ("I'm too moist right now");
+  }
+  
+  public void dryOff (){ //Resets the wizard's water power
+    waterPower = maxWaterPower;
+  }
+  
+  public int getWaterPower (){
+    return waterPower;
+  }
+  
+  public int getMaxWaterPower (){
+    return maxWaterPower;
+  }
+}

@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>Braulios Portfolio: OOP</title>
+<link rel "stylesheet" type="text/css" href="stylesheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style type="text/css">
+@import url("../Calibri/stylesheet.css");
+.portfolio {
+    font-family: Calibri;
+}
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #46b8b0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #0073BA;
+    display: block;
+}
+.sidenav a:hover {
+    color: #FFFFFF;
+}
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {
+    padding-top: 15px;
+}
+.sidenav a {
+    font-size: 20px;
+}
+}
+</style>
+<div class="sidenav"><a href="AboutMeStart.html">About Me</a> <a href="OOP.html"><font color="black">OOP</font></a> <a href="OOP.html"><font size="+1" color="black">&nbsp;&nbsp;&nbsp;&nbsp;What is OOP</font></a> <a href="DontFearOOP.html"><font size="+1">&nbsp;&nbsp;&nbsp;&nbsp;Don't Fear OOP</font></a> <a href="OOPCode.html"><font size="+1">&nbsp;&nbsp;&nbsp;&nbsp;OOP Code Tutorial</font></a> <a href="Recursion.html">Recursion</a> <a href="Array.html">Array</a><a href="sort.html">Sorting</a> <a href="OOP2.html">OOP 2</a> <a href="Contact.html">Contact</a><a href="BIB.html">Bibliography</a><a href="proj.html">Project Plans</a></div>
+<div class="main">
+	<p> <FONT SIZE=+4> <Center> <B> What is OOP?</font> </Center> </B></p>
+<p><FONT SIZE=+2>
+</font></p>
+<FONT SIZE=+2>
+<p class="portfolio"><strong>Definition</strong>: OOP Stands for Object <strong>Oriented</strong> Programming.</p>
+<p class="portfolio">Procedure Vs. OOP: Proc programming uses only <strong><em>ONE</em></strong> program to run the code, unlike OOP that uses a combination of multiple classes all combined.</p>
+<P><u>OOP Breakdown:</u></P> 
+</font>
+<UL> 
+  <LI><span class="portfolio"><font size="+2">A Class is like the template used to make something.
+  </font>
+  </span>
+  <LI><span class="portfolio"><font size="+2">Object is the thing made out of the class aka template
+  </font>
+  </span>
+  <LI><span class="portfolio"><font size="+2">Attributes are the characteristiks of the object, aka the variables
+  </font>
+  </span>
+  <LI><span class="portfolio"><font size="+2">Behaviours are the actions that can be done by the object, aka the methods 
+  </font>
+  </span>
+</UL>
+<p align="center" class="portfolio"><font size="+2"><font color= blue>Global Variables in a class must be kept private that way other classes don't accidentally change its values. To acces these variables we have to manually get and change their values using 2 types of methods.</font></p>
+
+<UL>
+  <LI><span class="portfolio">Accesor Methods, gets a value from a class that can normally not be accesed
+  </span>
+  <LI><span class="portfolio">Mutator Methods, sets a value from a class that can normally not be changed
+  </span>  
+</UL>
+<p class="portfolio">Firstly, to create an object a constructor is needed. A constructor is like a method. It has the same name as the class. However it is not a mutator method. Inside the constructor is where the default values for the object are set. More than one constructor can be made but they must have a different parameters list that defines that object. This is called an overloaded constructor since the both have the same name and the parameters values are the only thing telling them apart. If a constructor is not made, Java will create a default constructor.</p>
+<p class="portfolio">Let's say you forget to include a vairable in your class or maybe a method, well worry not this can be solved all thanks to inheritens. What you can end up doing is extending the class, this will create a subclass (The class that was extended will be called the superclass). The subclass won't have to define any of the variables or methods again since they are inherited from the superclass. Although you don't need create the methods again, the subclass can override one of the methods in the superclass. Once we have a couple of classes being extended from one another, we can create a Class Hierarchy Tree to visualize the break down from the original object class.</p>
+<p class="portfolio">Up Casting and Down Casting is a way to travel through the class hierarchy tree. Upcasting is going up to the superclasses. This can never fail because once an object is created, anything above it already is created with it. On the other hand, downcasting can fail. If an object is trying to go down the hierarchy it can fail because more than one subclass could have been created and Java wouldn't know which one to go to.</p>
+<centre><table border=1>
+  <tr>
+    <td><img src="shutterstock_459867970.jpg" width="1000" height="533" alt=""/>
+    </centre></font></td>
+  </tr>
+</table>
+<p class="portfolio"><center><table border=1>
+  <tr>
+    <td><a href="OOP2.html"><img src="arrow2.png" width="500" height="88" alt=""></a></td>
+  </tr>
+</table></center>
+</div>
+</body></html>

@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>Braulios Portfolio: Recursion</title>
+<link rel "stylesheet" type="text/css" href="stylesheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style type="text/css">
+@import url("../Calibri/stylesheet.css");
+.portfolio {
+    font-family: Calibri;
+}
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #46b8b0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #0073BA;
+    display: block;
+}
+.sidenav a:hover {
+    color: #FFFFFF;
+}
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {
+    padding-top: 15px;
+}
+.sidenav a {
+    font-size: 20px;
+}
+}
+</style>
+<div class="sidenav"><a href="AboutMeStart.html">About Me</a> <a href="OOP.html">OOP</a> <a href="Recursion.html"><font color="black">Recursion</font></a> <a href="Recursion.html"><font size="+1"   color="black">&nbsp;&nbsp;&nbsp;&nbsp;What is Recursion</font></a> <a href="RecursionEx.html"><font size="+1">&nbsp;&nbsp;&nbsp;&nbsp;Recursion Examples</font></a> <a href="Array.html">Array</a><a href="sort.html">Sorting</a> <a href="OOP2.html">OOP 2</a> <a href="Contact.html">Contact</a> <a href="BIB.html">Bibliography</a><a href="proj.html">Project Plans</a></div>
+<div class="main">
+	
+<p> <FONT SIZE=+4> <Center> <B> What is Recursion?</font> </Center> </B></p>
+
+<FONT SIZE=+2>
+  <p>&nbsp;</p>
+<p>Recursion is the process of calling oneself while already being in it (Calling a method while already being inside that method). The process allows solutions that are repetitive to be solved efficiently. Recursion will use less code and will be more simplistic than creating multiple functions. A recursive function must eventually come to an end, otherwise a stackoverflow will occur. A recursive method almost always have a parameter. This allows a new value to be passed each time it is called allowing for a different calculation or a continuation of a previous calculation. </p>
+  <font color="blue"><p>Ex. </p>
+  <p>public String loop (int x){</p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (x == 4)</p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return &quot;Done&quot;;</p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else</p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return loop(x+1);</p>
+<p>}</p></font>
+<p>There are three kinds of recursion, <strong>Linear</strong>, <strong>Binary</strong> and <strong>Tail</strong>.</p>
+  <p><strong>Linear</strong>: A Linear Recursion refers to a recursion that only calls itself once inside the method.</p>
+  <p><strong>Binary</strong>: A Binary Recursion refers to a recursion that calls itself more than once inside the method.</p>
+  <p><strong>Tail</strong>: A Tail Recursion refers to a recursion that has the call statement located at the very end of the method.</p>
+  <p>Recursion is similar to a for or while loop. It repeats itself until the end has been reached. A while loop is an infinite loop. It repeats itself until the loop statement isn´t met hence the name <em>while</em>. A for loop works differently. It doesn´t go on forever. Instead it goes on until the amount of loops requested has occured. Out of both loops, recursion is closest to a while loop. However, instead of checking to make sure that the statement is met, it waits until an end statement is found. This end statement is most likely the first return statement that actually gives out a value.</p>
+	<IMG STYLE="position:absolute; TOP:30%; LEFT:50%; WIDTH:300px; HEIGHT:300px" SRC="rnm.gif">
+  <center>
+	<table border=1>
+  <tr>
+    <td><img src="giphy.gif" width="800" height="480" alt=""/></td>
+  </tr>
+</table></center>
+
+</body></html>

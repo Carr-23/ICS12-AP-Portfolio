@@ -1,0 +1,37 @@
+/*
+Ms. Krasteva
+Braulio Carrion
+02/13/19
+This program creates student class objects
+*/
+public class OOP
+{
+    public static void main (String[] args)
+    {
+	//Exercise 1 part 1
+	Student s0 = new Student ("Bob"); //Student 1
+	s0.setMarks (90, 95);
+	s0.calcAverage ();
+	System.out.println (s0.message ());
+
+	Student s1 = new Student ("John"); //Student 2
+	s1.setMarks (85, 95);
+	s1.calcAverage ();
+	System.out.println (s1.message ());
+
+	Student s2 = new Student ("Luke"); //Student 3
+	s2.setMarks (75, 87);
+	s2.calcAverage ();
+	System.out.println (s2.message ());
+
+	Student s3 = new Student ("Tai"); //Student 4
+	s3.setMarks (65, 50);
+	s3.calcAverage ();
+	System.out.println (s3.message ());
+
+	Student s4 = new Student ("Lee"); //Student 5
+	s4.setMarks (25, 100);
+	s4.calcAverage ();
+	System.out.println (s4.message ());
+    }
+} // OOP class
